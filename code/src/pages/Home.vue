@@ -38,6 +38,8 @@ export default {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
   background-color: var(--color-text-background);
 }
 
