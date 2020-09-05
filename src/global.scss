@@ -1,0 +1,24 @@
+@import './assets/fonts/linux-libertine/font.scss';
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  --color-cv: #9B2020;
+  --color-alt: #8A817C;
+  --color-white: #f7f7f7;
+  --color-text: #050505;
+  --color-heading: black;
+  --font-cv: 'Linux Libertine', serif;
+  
+  --header-height: 4rem;
+}
+
+a {
+  color: var(--color-cv);
+}
