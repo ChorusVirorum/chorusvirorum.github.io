@@ -78,6 +78,10 @@ export default {
   z-index: 1;
 }
 
+.CvApp__content {
+  box-shadow: 0px 1px 2px #e5e5e5;
+}
+
 .CvApp__menuGroup {
   display: grid;
   position: fixed;
@@ -128,6 +132,7 @@ export default {
   .CvApp__menu {
     transform: translateY(0%);
     pointer-events: auto;
+    box-shadow: 0px -1px 5px rgba(0,0,0,.5);
   }
 }
 

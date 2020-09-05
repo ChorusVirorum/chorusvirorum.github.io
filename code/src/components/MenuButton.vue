@@ -41,6 +41,6 @@ export default {
   background-color: black;
   border-radius: 2rem;
 
-  box-shadow: 0px 1px 2px grey;
+  box-shadow: 0px 1px 4px rgba(0,0,0,.75);
 }
 </style>

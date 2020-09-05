@@ -54,6 +54,7 @@ export default {
 <style lang="scss">
 .CvHeader {
   transition: transform 250ms ease;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.7);
 
   &--isSmall {
     @media (max-width: 768px) {

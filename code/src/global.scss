@@ -19,10 +19,15 @@ body {
   --font-cv: 'Linux Libertine', serif;
   
   --header-height: 4rem;
-
-  --width-text: 960px;
+  --width-text: 860px;
 }
 
 a {
   color: var(--color-cv);
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,6 +1,7 @@
 <template>
   <div class="CvFooter" :class="modifiers">
     <img class="CvFooter__student" src="../assets/student.png"/>
+    <p>Dåne!</p>
     <p>&copy; 2020 - Chorus Virorum</p>
     <p>Kontakt: <a href="mailto:chorusvirorum@gmail.com">chorusvirorum@gmail.com</a></p>
   </div>
@@ -42,6 +43,7 @@ export default {
   p {
     margin: 0;
     padding: 0;
+    font-family: var(--font-cv);
   }
 }
 </style>

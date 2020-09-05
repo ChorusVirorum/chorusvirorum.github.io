@@ -33,6 +33,7 @@ export default {
     margin-top: .5rem;
     text-align: center;
     font-style: italic;
+    font-size: .8625rem;
   }
 }
 </style>
