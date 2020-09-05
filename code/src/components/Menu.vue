@@ -55,6 +55,7 @@ export default {
 .CvMenu__footer {
   font-size: 2rem;
   line-height: 0;
+  text-align: center;
   padding: 1rem;
 }
 

@@ -45,6 +45,7 @@ export default {
   font-size: 1.5rem;
   color: var(--color-text);
   font-style: italic;
+  text-align: center;
 }
 
 .CvHome__cvName {
@@ -72,6 +73,7 @@ export default {
   color: var(--color-text);
   font-size: 1.25rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .CvHome__text {

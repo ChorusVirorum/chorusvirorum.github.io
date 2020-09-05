@@ -21,11 +21,11 @@ const router = new VueRouter({
       } 
     },
     { 
-      path: '/om-oss', 
+      path: '/om-koren', 
       name: 'about', 
       component: About, 
       meta: {
-        title: 'Om oss'
+        title: 'Om kören'
       } 
     },
     { 
