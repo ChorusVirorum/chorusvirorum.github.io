@@ -38,6 +38,7 @@ export default {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--color-text-background);
 }
 
 .CvHome__welcome {

@@ -43,6 +43,15 @@ export default {
 
 <style lang="scss">
 .CvAbout {
+  max-width: var(--width-text);
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
   h1 {
     margin-left: 1rem;
     margin-right: 1rem;

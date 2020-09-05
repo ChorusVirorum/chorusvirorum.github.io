@@ -7,12 +7,12 @@
       <router-view />
     </div>
     <div class="CvApp__menuGroup">
+      <div class="CvApp__menuButton">
+        <CvMenuButton :onClick="menuButtonClick" :focus="menuOpen"/>
+      </div>
       <div class="CvApp__overlay" @click="closeMenu"></div>
       <div class="CvApp__menu">
         <CvMenu />
-      </div>
-      <div class="CvApp__menuButton">
-        <CvMenuButton :onClick="menuButtonClick" :focus="menuOpen"/>
       </div>
     </div>
     <footer>
@@ -80,29 +80,30 @@ export default {
 
 .CvApp__menuGroup {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr auto;
   position: fixed;
   right: 0;
   bottom: 0;
   height: calc(100vh - var(--header-height));
-
   align-items: end;
-  justify-items: end;
-
   z-index: 2;
+  width: 100vw;
 }
 
 .CvApp__menuButton {
   padding: 1rem;
-  z-index: 2;
+  z-index: 1;
+  justify-self: end;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 
 .CvApp__menu {
   pointer-events: none;
-  transform: translateX(100%);
+  transform: translateY(100%);
   transition: transform 250ms ease;
   z-index: 2;
+  display: grid;
 }
 
 .CvApp__overlay {
@@ -125,7 +126,7 @@ export default {
   }
 
   .CvApp__menu {
-    transform: translateX(0%);
+    transform: translateY(0%);
     pointer-events: auto;
   }
 }

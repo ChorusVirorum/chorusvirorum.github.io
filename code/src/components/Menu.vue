@@ -19,7 +19,6 @@
         <CvFacebookIcon/>
       </a>
     </div>
-    <CvRibbon />
   </div>
 </template>
 
@@ -68,7 +67,6 @@ export default {
 .CvMenu__listItem {
   padding: 1rem 1rem;
   text-align: center;
-  min-width: 12rem;
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-cv);
 
