@@ -39,6 +39,10 @@ const router = new VueRouter({
   ]
 });
 
+// Adding articles to the loader.
+const requireTest = require.context('./articles', true, /\.md$/);
+requireTest.keys().forEach(requireTest);
+
 new Vue({
   router,
   render: h => h(App),
