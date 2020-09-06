@@ -7,7 +7,6 @@ rm -v -r -f ../*.*
 npm run build
 cp -r build/* ../
 
-# git add .
-# git add ..
-# git commit -m 'Updating page'
-# git push origin master
+git add ..
+git commit -m 'Updating page'
+git push origin master

@@ -4,6 +4,9 @@ import VueRouter from 'vue-router';
 import App from './App.vue'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
+import AboutHistory from './pages/subPages/AboutHistory'
+import AboutNow from './pages/subPages/AboutNow'
+import AboutPerformances from './pages/subPages/AboutPerformances'
 import Join from './pages/Join.vue'
 
 Vue.config.productionTip = false
@@ -26,14 +29,40 @@ const router = new VueRouter({
       component: About, 
       meta: {
         title: 'Om kören'
-      } 
+      },
+      children: [
+        {
+          path: 'i-nutid',
+          name: 'about-now', 
+          component: AboutNow,
+          meta: {
+            title: 'I nutid'
+          },
+        },
+        {
+          path: 'historia',
+          name: 'about-history', 
+          component: AboutHistory,
+          meta: {
+            title: 'Historia'
+          },
+        },
+        {
+          path: 'framtradanden',
+          name: 'about-performances', 
+          component: AboutPerformances,
+          meta: {
+            title: 'Framträdanden'
+          },
+        }
+      ]
     },
     { 
       path: '/ga-med', 
-      name: 'joint', 
+      name: 'join', 
       component: Join, 
       meta: {
-        title: 'Gå med i kören'
+        title: 'Gå med i CV'
       } 
     },
   ]

@@ -87,7 +87,7 @@ export default {
   position: fixed;
   right: 0;
   bottom: 0;
-  height: calc(100vh - var(--header-height));
+  max-height: calc(100vh - var(--header-height));
   align-items: end;
   z-index: 2;
   width: 100vw;

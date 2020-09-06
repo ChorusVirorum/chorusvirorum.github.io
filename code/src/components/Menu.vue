@@ -7,11 +7,7 @@
         v-for="(route, index) in routes" 
         :key="index"
       >
-        <router-link
-          :to="{ name: route.name }"
-        >
-          {{route.meta.title}}
-        </router-link>
+        <CvMenuItem :route="route" />
       </li>
     </ul>
     <div class="CvMenu__footer">
@@ -25,12 +21,14 @@
 <script>
 import CvFacebookIcon from './icons/FacebookIcon';
 import CvRibbon from './Ribbon';
+import CvMenuItem from './MenuItem';
 
 export default {
   name: 'CvMenu',
   components: {
     CvFacebookIcon,
-    CvRibbon
+    CvRibbon,
+    CvMenuItem
   },
   computed: {
     modifiers() {
@@ -49,6 +47,7 @@ export default {
   background-color: var(--color-white);
   border-radius: .25rem;
   display: grid;
+  overflow-y: auto;
 }
 
 .CvMenu__footer {
@@ -62,19 +61,5 @@ export default {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.CvMenu__listItem {
-  padding: 1rem 1rem;
-  text-align: center;
-  background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-cv);
-
-  a {
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-  }
 }
 </style>
